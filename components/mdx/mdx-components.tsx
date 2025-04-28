@@ -2,13 +2,11 @@ import { cn } from "@/lib/utils";
 import Image, { type ImageProps } from "next/image";
 import React from "react";
 
-import { openSans } from "@/app/layout";
-
 export const mdxComponents = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       className={cn(
-        "scroll-m-20 text-xl font-bold tracking-tight lg:text-2xl [&:not(:first-child)]:mt-6",
+        "scroll-m-20 text-xl font-bold tracking-tight lg:text-4xl [&:not(:first-child)]:mt-6",
         className
       )}
       {...props}
@@ -17,7 +15,7 @@ export const mdxComponents = {
   h2: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h2
       className={cn(
-        "scroll-m-20 mt-4 text-lg sm:text-xl font-medium tracking-tight",
+        "scroll-m-20 mt-4 text-lg sm:text-3xl font-medium tracking-tight",
         className
       )}
       {...props}
@@ -26,7 +24,7 @@ export const mdxComponents = {
   h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       className={cn(
-        "mt-2 scroll-m-20 sm:text-lg font-medium tracking-tight",
+        "mt-2 scroll-m-20 sm:text-2xl font-medium tracking-tight",
         className
       )}
       {...props}
@@ -61,7 +59,7 @@ export const mdxComponents = {
   ),
   a: ({className,children,...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
     <a
-      className={cn("font-medium text-blue-700/70 hover:text-blue-800 underline decoration-dashed decoration-[1px] underline-offset-4 inline-flex items-center py-1 text-wrap", className)}
+      className={cn("font-medium text-blue-700/70 hover:text-blue-800 underline decoration-dashed decoration-[1px] text-xl underline-offset-4 inline-flex items-center py-1 text-wrap", className)}
       target="_blank"
       {...props}
     >
@@ -73,18 +71,18 @@ export const mdxComponents = {
     ...props
   }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p
-      className={cn("leading-6 my-1 [&:not(:first-child)]:mt-2",className)}
+      className={cn("leading-6 my-1 text-xl [&:not(:first-child)]:mt-2",className)}
       {...props}
     />
   ),
   ul: ({ className, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
-    <ul className={cn("my-1 leading-6 ml-6 list-disc [&>li]:mt-1", className)} {...props} />
+    <ul className={cn("my-1 leading-6 ml-6 text-xl list-disc [&>li]:mt-1", className)} {...props} />
   ),
   ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
-    <ol className={cn("my-1 leading-6 ml-6 list-decimal", className)} {...props} />
+    <ol className={cn("my-1 leading-6 ml-6 text-xl list-decimal", className)} {...props} />
   ),
   li: ({ className, ...props }: React.HTMLAttributes<HTMLLIElement>) => (
-    <li className={cn("leading-6", className)} {...props} />
+    <li className={cn("leading-6 text-xl", className)} {...props} />
   ),
   blockquote: ({
     className,

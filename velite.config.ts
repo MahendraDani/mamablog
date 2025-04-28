@@ -30,7 +30,7 @@ export const articles = defineCollection({
       linkedInURL : s.string().url().optional(),
       twitterURL : s.string().url().optional(),
       facebookURL : s.string().url().optional(),
-      image: s.image(),
+      image: s.string(),
       excerpt : s.excerpt(),
       metadata : s.metadata(),
       markdown : s.markdown(),

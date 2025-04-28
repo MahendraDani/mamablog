@@ -1,18 +1,8 @@
+import { comrmorantGaramond, openSans } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Open_Sans, Cormorant_Garamond } from "next/font/google";
+import "./globals.css"
 
-export const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-export const comrmorantGaramond = Cormorant_Garamond({
-  variable: "--font-cormorant-garamond", 
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",

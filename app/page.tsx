@@ -6,9 +6,11 @@ export default function Home() {
 
   return (
     <div>
-      {articles.map((article,idx)=>(
-        <MDXContentRenderer key={idx} code={article.body}/>
-      ))}
+      <pre>
+        <code>
+        {JSON.stringify(article,null,2)}
+        </code>
+      </pre>
     </div>
   );
 }
