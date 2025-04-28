@@ -41,13 +41,6 @@ export const articles = defineCollection({
 
 export default defineConfig({
   root: "content",
-  output: {
-    data: ".velite",
-    assets: "public/static",
-    base: "/static/",
-    name: "[name]-[hash:6].[ext]",
-    clean: true,
-  },
   collections: { articles },
   mdx: {
     rehypePlugins: [

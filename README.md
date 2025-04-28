@@ -6,7 +6,7 @@ Start time : 11:24
 - [x] Add one sample post - 11:49 PM
 - [x] setup shadcn UI - 12:10 AM
 - [x] setup MDX renderer and components - 12:10 AM
-- [ ] add multiple sample posts
+- [x] add multiple sample posts - 12:41 AM
 - [ ] Create /articles/:id page
 - [ ] Create landing page
 - [ ] Create categories page
