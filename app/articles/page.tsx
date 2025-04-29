@@ -18,7 +18,8 @@ export default function Articles() {
     if (!acc[category]) {
       acc[category] = [];
     }
-    acc[category].push(article);
+    // Repeat the article three times
+    acc[category].push(article, article, article);
     return acc;
   }, {} as Record<string, typeof articles>);
 
