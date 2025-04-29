@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export const ArticleCard = ({ article }: { article: Blog }) => {
   return (
-    <Card className="w-[95%] sm:w-[30%] h-[30rem] p-0">
+    <Card className="w-full h-[30rem] p-0">
       <CardHeader className="p-0 h-64 relative -mb-2">
         <Image
           src={article.image}
