@@ -1,8 +1,9 @@
 import { comrmorantGaramond, openSans } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import "./globals.css"
-
+import "./globals.css";
+import { Navbar } from "@/components/navbar";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,11 +16,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={cn("antialiased bg-background text-foreground",comrmorantGaramond.className, openSans.className)}  
+        className={cn(
+          "antialiased bg-background text-foreground",
+          comrmorantGaramond.className,
+          openSans.className
+        )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          forcedTheme="light"
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -41,11 +41,13 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-background-og : var(--background-og)
 }
 
 :root {
+  --background-og : ;
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.95 0.0146 102.46);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -79,6 +81,7 @@
 }
 
 .dark {
+  --background-og : oklch(0.22 0.0061 56.04);
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -124,3 +127,5 @@
     @apply font-sans
   }
 }
+
+ /* --background: oklch(1 0 0 ); */

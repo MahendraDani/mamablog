@@ -31,7 +31,7 @@ export default async function BlogPage({ params }: ArticlePageParams) {
   return (
     <div className="relative">
       {/* Section for the Image only */}
-      <div className="relative w-[100vw] h-[60vh] sm:w-full sm:h-[85vh] overflow-hidden">
+      <div className="relative w-[100vw] h-[60vh] sm:w-full sm:h-[80vh] overflow-hidden">
         <Image
           src={blog.image}
           alt="Blog Image"
@@ -41,7 +41,7 @@ export default async function BlogPage({ params }: ArticlePageParams) {
       </div>
 
       {/* Blog content starts */}
-      <article className="relative bg-white px-4 py-4">
+      <article className="relative bg-background px-4 py-4">
         <div className="flex flex-row max-w-[90%] sm:max-w-[60%] mx-auto justify-between items-center">
           <div className="flex flex-row justify-start items-center gap-16">
             <div className="flex flex-col justify-center items-left">
