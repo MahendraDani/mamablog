@@ -19,9 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "antialiased bg-background text-foreground",
-          comrmorantGaramond.className,
-          openSans.className
+          "antialiased bg-background text-foreground",comrmorantGaramond.className
         )}
       >
         <ThemeProvider
