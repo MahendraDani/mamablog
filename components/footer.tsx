@@ -27,9 +27,9 @@ export const Footer = () => {
           <Link href={"https://mahendradani.vercel.app"}>Mahendra Dani</Link>
         </p>
       </div>
-      <ul className="decoration-none flex text-sm sm:flex-row flex-col justify-between items-center gap-4">
+      <ul className="decoration-none flex text-sm sm:flex-row flex-col justify-between items-center gap-1 sm:gap-4">
         {links.map((link, idx) => (
-          <li key={idx} className="text-lg">
+          <li key={idx} className="text-sm">
             <Link href={link.url}>{link.name}</Link>
           </li>
         ))}

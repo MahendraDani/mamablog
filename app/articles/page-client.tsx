@@ -49,7 +49,7 @@ function SearchArticles({ articles }: { articles: Blog[] }) {
     return acc;
   }, {} as Record<string, typeof articles>);
   return (
-    <div className="px-12">
+    <div className="px-6 sm:px-12">
       <div className="flex justify-between items-center">
         <h1 className="text-xl sm:text-2xl">Categories</h1>
         <div>

@@ -31,7 +31,7 @@ export default async function BlogPage({ params }: ArticlePageParams) {
   return (
     <div className="relative">
       {/* Section for the Image only */}
-      <div className="relative w-[100vw] h-[60vh] sm:w-full sm:h-[80vh] overflow-hidden">
+      <div className="relative w-[100vw] h-[65vh] sm:w-full sm:h-[80vh] overflow-hidden">
         <Image
           src={blog.image}
           alt="Blog Image"

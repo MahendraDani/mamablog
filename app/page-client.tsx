@@ -30,7 +30,7 @@ export const HomePageClient = ({ articles }: { articles: Blog[] }) => {
 
   return (
     <div className="relative flex flex-col-reverse sm:flex-col">
-      <div className="relative w-[100vw] h-[80vh] sm:w-full sm:h-[93vh] overflow-hidden">
+      <div className="relative w-[100vw] h-[83vh] sm:w-full sm:h-[93vh] overflow-hidden">
       <Image
         src={articles[idx].image}
         alt="Blog Image"
