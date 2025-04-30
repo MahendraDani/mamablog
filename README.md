@@ -2,6 +2,10 @@
 
 Mamablog is a blogging platform developed for the Mother’s Day Tribute Blog Challenge. Visit the website at [https://mamablog.vercel.app/](https://mamablog.vercel.app/)
 
+![Home](/public/static/home.png)
+
+![Article](/public/static/blog.png)
+
 ## Tech Stack : 
 1. [Nextjs](https://nextjs.org/) - framework
 2. [velite](https://velite.js.org/) - content management
