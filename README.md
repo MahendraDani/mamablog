@@ -1,12 +1,19 @@
-# Mamablog
-I am going to speed run this challenge. 
-Start time : 11:24
+# Project Overview
 
-- [x] Setup velite - 11:49 PM
-- [x] Add one sample post - 11:49 PM
-- [x] setup shadcn UI - 12:10 AM
-- [x] setup MDX renderer and components - 12:10 AM
-- [x] add multiple sample posts - 12:41 AM
-- [x] Create /articles/:id page - 2:08 AM
-- [ ] Create landing page
-- [ ] Implement search functionality
+Mamablog is a blogging platform developed for the Mother’s Day Tribute Blog Challenge.
+
+## Tech Stack : 
+1. [Nextjs](https://nextjs.org/) - framework
+2. [velite](https://velite.js.org/) - content management
+3. [MDX](https://mdxjs.com/) - rich content rendering and customization
+4. [shadcn/ui](https://ui.shadcn.com/) - component library
+5. [Tailwindcss](https://tailwindcss.com/) - css library
+6. [Vercel](https://vercel.com) - deployment and CI/CD
+
+## Features
+
+1. Rich articles : Articles are written in MDX, which provides all the features of markdown and also allows to add custom React components to render content.
+
+2. Content Management : All articles are written in [/contents/articles](/content/articles) directory, which are build and transformed into JSON at build time and rendered on screen using MDX.
+
+3. Effective Searching : Blazing fast search feature to find articles easily.
