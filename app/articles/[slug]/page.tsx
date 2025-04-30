@@ -5,6 +5,7 @@ import { formatDate } from "@/lib/date";
 import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { Footer } from "@/components/footer";
 
 interface ArticlePageParams {
   params: Promise<{
@@ -106,6 +107,7 @@ export default async function BlogPage({ params }: ArticlePageParams) {
           </div>
         </div>
       </article>
+      <Footer/>
     </div>
   );
 }
