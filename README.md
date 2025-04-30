@@ -9,5 +9,4 @@ Start time : 11:24
 - [x] add multiple sample posts - 12:41 AM
 - [x] Create /articles/:id page - 2:08 AM
 - [ ] Create landing page
-- [ ] Create categories page
 - [ ] Implement search functionality
