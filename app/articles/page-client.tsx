@@ -89,8 +89,10 @@ function SearchArticles({ articles }: { articles: Blog[] }) {
                       </CarouselItem>
                     ))}
                   </CarouselContent>
-                  <CarouselNext className="absolute -top-6 right-6 rounded-none bg-black text-white hover:bg-black hover:text-white disabled:bg-background disabled:text-black cursor-pointer" />
-                  <CarouselPrevious className="absolute -top-6 left-[87vw] rounded-none bg-black text-white hover:bg-black disabled:bg-background hover:text-white cursor-pointer disabled:text-black" />
+                  <div className="absolute -top-6 right-12 flex flex-row justify-start items-center">
+                      <CarouselPrevious className="rounded-none bg-black text-white hover:bg-black hover:text-white disabled:bg-background disabled:text-black cursor-pointer ml-4" />
+                      <CarouselNext className="rounded-none bg-black text-white hover:bg-black hover:text-white disabled:bg-background disabled:text-black cursor-pointer" />
+                  </div>
                 </Carousel>
               </div>
             )
