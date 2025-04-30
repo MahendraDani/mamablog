@@ -13,7 +13,7 @@ export const Footer = () => {
     },
     {
       name: "Blog",
-      url: "https://blog.mahendradani.vercel.app",
+      url: "https://mahendradani.vercel.app",
     },
   ];
   return (
